@@ -4,7 +4,8 @@ import Navbar from "./components/Navbar";
 import PodcastUpdates from "./components/PodcastUpdates";
 import ServicesOverview from "./components/ServicesOverview";
 import SocialProof from "./components/SocialProof";
-import Footer from "./pages/footer";
+import Footer from "./pages/Footer";
+
 import Home from "./pages/Home";
 
 function App() {
