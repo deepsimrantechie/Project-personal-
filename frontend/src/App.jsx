@@ -1,9 +1,9 @@
-import CareersCTA from "./components/CareersCTA";
+//import CareersCTA from "./components/CareersCTA";
 import ContentHub from "./components/ContentHub";
 import Navbar from "./components/Navbar";
 import PodcastUpdates from "./components/PodcastUpdates";
-import ServicesOverview from "./components/ServicesOverview";
-import SocialProof from "./components/SocialProof";
+//import ServicesOverview from "./components/ServicesOverview";
+//import SocialProof from "./components/SocialProof";
 import Footer from "./pages/Footer";
 
 import Home from "./pages/Home";
@@ -13,9 +13,9 @@ function App() {
     <div>
       <Navbar />
       <Home />
-      <SocialProof />
+      {/**<SocialProof />
       <ServicesOverview />
-      <CareersCTA />
+      <CareersCTA /> */}
       <PodcastUpdates />
       <ContentHub />
       <Footer />

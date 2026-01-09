@@ -23,12 +23,6 @@ const Navbar = () => {
 
   const menuItems = {
     Company: ["About Us", "Case Studies", "Team", "Testimonials"],
-    Services: [
-      "Product Design",
-      "Web Development",
-      "Digital Marketing",
-      "Security & Maintenance",
-    ],
     Resources: ["Blog", "Guides", "Podcast", "Webinars"],
   };
 
@@ -84,7 +78,7 @@ const Navbar = () => {
                   {/* DROPDOWN */}
                   {openMenu === title && (
                     <div className="absolute left-0 top-7 pt-4">
-                      <div className="bg-white rounded-md shadow-md py-2 min-w-50">
+                      <div className="bg-white rounded-md shadow-md py-2 min-w-48">
                         {items.map((item) => (
                           <div
                             key={item}
@@ -103,12 +97,16 @@ const Navbar = () => {
               <a className="hover:text-blue-600 cursor-pointer">Contact</a>
             </div>
 
-            {/* RIGHT ACTIONS */}
-            <div className="flex items-center gap-4">
-              {/* SEARCH */}
-              <button className="text-slate-500 hover:text-blue-600 transition">
+            {/* SEARCH INPUT */}
+            <div className="hidden md:flex items-center">
+              <div className="relative">
+                <input
+                  type="text"
+                  placeholder="Search..."
+                  className="w-56 pl-10 pr-4 py-2 text-sm border border-slate-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                />
                 <svg
-                  className="w-5 h-5"
+                  className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -120,12 +118,7 @@ const Navbar = () => {
                     d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
                   />
                 </svg>
-              </button>
-
-              {/* CTA */}
-              <button className="bg-blue-600 text-white px-6 py-2 rounded-md text-sm font-medium hover:bg-blue-700 transition">
-                Get Consultation
-              </button>
+              </div>
             </div>
           </div>
         </div>

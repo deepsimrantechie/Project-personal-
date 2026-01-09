@@ -50,3 +50,28 @@
   animation: fadeUp 0.8s ease-out both;
   animation-delay: 0.2s;
 }
+.orbit {
+  animation: spin 20s linear infinite;
+}
+
+.orbit-reverse {
+  animation: spinReverse 20s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spinReverse {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}

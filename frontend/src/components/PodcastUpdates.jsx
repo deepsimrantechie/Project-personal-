@@ -27,9 +27,9 @@ const PodcastUpdates = () => {
             <div className="absolute inset-6 rounded-full border-2 border-teal-400 opacity-40"></div>
             <div className="absolute inset-14 rounded-full border-2 border-teal-400 opacity-30"></div>
 
-            {/* CENTER MIC */}
+            {/* CENTER SATELLITE */}
             <div className="absolute inset-0 m-auto w-40 h-40 bg-teal-400 rounded-full flex items-center justify-center z-10 shadow-xl">
-              <span className="text-6xl">🎙️</span>
+              <span className="text-6xl">🛰️</span>
             </div>
 
             {/* ROTATING ICONS */}

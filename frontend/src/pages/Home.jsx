@@ -2,72 +2,87 @@ import React from "react";
 
 const Home = () => {
   return (
-    <section className="min-h-screen flex items-center bg-white">
-      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-        {/* LEFT: VALUE PROPOSITION */}
-        <div>
-          <p className="text-sm uppercase tracking-widest text-slate-500">
-            Technology Consulting
-          </p>
+    <main className="w-full">
+      {/* ================= HERO SECTION ================= */}
+      <section className="bg-white py-24">
+        <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+          {/* Text */}
+          <div>
+            <h1 className="text-4xl md:text-5xl font-bold text-slate-900 leading-tight">
+              Helping businesses grow better.
+            </h1>
 
-          <h1 className="mt-4 text-4xl md:text-5xl font-bold text-slate-900 leading-tight">
-            We help businesses build, <br />
-            scale & modernize <br />
-            their digital systems
-          </h1>
-
-          <p className="mt-6 text-lg text-slate-600 max-w-xl">
-            NexGen is a technology consulting company helping startups and
-            enterprises design, develop, and secure scalable digital products.
-          </p>
-
-          <div className="mt-10 flex gap-4">
-            <button className="bg-blue-600 text-white px-8 py-3 rounded-md font-medium hover:bg-blue-700 transition">
-              Get Free Consultation
-            </button>
-
-            <button className="border border-slate-300 px-8 py-3 rounded-md text-slate-700 hover:bg-slate-50 transition">
-              View Services
-            </button>
-          </div>
-        </div>
-
-        {/* RIGHT: TRUST / CREDIBILITY */}
-        <div className="bg-slate-50 rounded-xl p-10">
-          <h3 className="text-xl font-semibold text-slate-900">
-            Why companies trust us
-          </h3>
-
-          <ul className="mt-6 space-y-4 text-slate-700">
-            <li className="flex gap-3">
-              <span className="text-blue-600 font-bold">✓</span>
-              7+ years of consulting experience
-            </li>
-
-            <li className="flex gap-3">
-              <span className="text-blue-600 font-bold">✓</span>
-              150+ successful digital projects
-            </li>
-
-            <li className="flex gap-3">
-              <span className="text-blue-600 font-bold">✓</span>
-              Trusted by startups & enterprises
-            </li>
-
-            <li className="flex gap-3">
-              <span className="text-blue-600 font-bold">✓</span>
-              Focus on scalability & security
-            </li>
-          </ul>
-
-          <div className="mt-8 border-t pt-6">
-            <p className="text-sm text-slate-500">
-              Guaranteed response within 1 business day
+            <p className="mt-6 text-lg text-slate-600">
+              We build scalable eCommerce solutions and data-driven platforms
+              that increase revenue, automate workflows, and improve customer
+              engagement.
             </p>
+
+            <div className="mt-8 flex gap-4">
+              <button className="bg-blue-600 text-white px-8 py-3 rounded-md font-medium hover:bg-blue-700 transition">
+                Get Started
+              </button>
+              <button className="border border-slate-300 px-8 py-3 rounded-md font-medium hover:bg-slate-100 transition">
+                View Work
+              </button>
+            </div>
+          </div>
+
+          {/* Image */}
+          <div className="flex justify-center">
+            <img
+              src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7"
+              alt="Business growth"
+              className="rounded-xl shadow-lg"
+            />
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+
+      {/* ================= FEATURES ================= */}
+      <section className="bg-slate-50 py-20">
+        <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-10">
+          {[
+            {
+              title: "Automation",
+              img: "https://images.unsplash.com/photo-1555949963-aa79dcee981c",
+              desc: "Reduce manual work and scale faster with intelligent automation.",
+            },
+            {
+              title: "Analytics",
+              img: "https://images.unsplash.com/photo-1551288049-bebda4e38f71",
+              desc: "Make informed decisions using real-time insights and reports.",
+            },
+            {
+              title: "Personalization",
+              img: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f",
+              desc: "Deliver personalized experiences that convert visitors to customers.",
+            },
+          ].map((item) => (
+            <div
+              key={item.title}
+              className="bg-white rounded-lg shadow-sm overflow-hidden"
+            >
+              <img
+                src={item.img}
+                alt={item.title}
+                className="h-48 w-full object-cover"
+              />
+              <div className="p-6">
+                <h3 className="text-xl font-semibold text-slate-900">
+                  {item.title}
+                </h3>
+                <p className="mt-3 text-slate-600">{item.desc}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* ================= SOCIAL PROOF ================= */}
+
+      {/* ================= CTA ================= */}
+    </main>
   );
 };
 
