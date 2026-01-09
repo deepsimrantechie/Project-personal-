@@ -2,62 +2,68 @@ import React from "react";
 
 const Home = () => {
   return (
-    <section className="min-h-screen bg-white pt-28">
-      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-        {/* LEFT CONTENT */}
+    <section className="min-h-screen flex items-center bg-white">
+      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+        {/* LEFT: VALUE PROPOSITION */}
         <div>
-          <p className="text-sm uppercase tracking-widest text-gray-500">
-            Are you ready to
+          <p className="text-sm uppercase tracking-widest text-slate-500">
+            Technology Consulting
           </p>
 
-          <h1 className="text-4xl md:text-5xl font-extrabold leading-tight mt-3">
-            Digitally Transform <br />
-            <span className="text-orange-500">Your Business</span>
+          <h1 className="mt-4 text-4xl md:text-5xl font-bold text-slate-900 leading-tight">
+            We help businesses build, <br />
+            scale & modernize <br />
+            their digital systems
           </h1>
 
-          <p className="text-gray-600 mt-5 max-w-lg">
-            We help businesses establish, scale, and succeed online through
-            design, development, and digital marketing.
+          <p className="mt-6 text-lg text-slate-600 max-w-xl">
+            NexGen is a technology consulting company helping startups and
+            enterprises design, develop, and secure scalable digital products.
           </p>
 
-          <div className="flex gap-4 mt-8">
-            <button className="bg-orange-500 text-white px-6 py-3 rounded-md font-medium hover:bg-orange-600 transition">
-              Contact Us
+          <div className="mt-10 flex gap-4">
+            <button className="bg-blue-600 text-white px-8 py-3 rounded-md font-medium hover:bg-blue-700 transition">
+              Get Free Consultation
             </button>
-            <button className="border px-6 py-3 rounded-md hover:bg-gray-100 transition">
-              Read More
+
+            <button className="border border-slate-300 px-8 py-3 rounded-md text-slate-700 hover:bg-slate-50 transition">
+              View Services
             </button>
           </div>
         </div>
 
-        {/* RIGHT ROTATION */}
-        <div className="flex justify-center items-center">
-          <div className="relative w-80 h-80">
-            {/* CENTER ORANGE CIRCLE */}
-            <div className="absolute inset-0 m-auto w-32 h-32 bg-orange-500 rounded-full z-10"></div>
+        {/* RIGHT: TRUST / CREDIBILITY */}
+        <div className="bg-slate-50 rounded-xl p-10">
+          <h3 className="text-xl font-semibold text-slate-900">
+            Why companies trust us
+          </h3>
 
-            {/* ROTATING CONTAINER */}
-            <div className="absolute inset-0 slow-spin">
-              {/* CARD 1 */}
-              <div className="absolute top-0 left-1/2 -translate-x-1/2 bg-white shadow-lg rounded-xl w-32 h-20 flex items-center justify-center reverse-spin">
-                Marketing
-              </div>
+          <ul className="mt-6 space-y-4 text-slate-700">
+            <li className="flex gap-3">
+              <span className="text-blue-600 font-bold">✓</span>
+              7+ years of consulting experience
+            </li>
 
-              {/* CARD 2 */}
-              <div className="absolute right-0 top-1/2 -translate-y-1/2 bg-white shadow-lg rounded-xl w-32 h-20 flex items-center justify-center reverse-spin">
-                Designing
-              </div>
+            <li className="flex gap-3">
+              <span className="text-blue-600 font-bold">✓</span>
+              150+ successful digital projects
+            </li>
 
-              {/* CARD 3 */}
-              <div className="absolute bottom-0 left-1/2 -translate-x-1/2 bg-white shadow-lg rounded-xl w-32 h-20 flex items-center justify-center reverse-spin">
-                Development
-              </div>
+            <li className="flex gap-3">
+              <span className="text-blue-600 font-bold">✓</span>
+              Trusted by startups & enterprises
+            </li>
 
-              {/* CARD 4 */}
-              <div className="absolute left-0 top-1/2 -translate-y-1/2 bg-white shadow-lg rounded-xl w-32 h-20 flex items-center justify-center reverse-spin">
-                Strategy
-              </div>
-            </div>
+            <li className="flex gap-3">
+              <span className="text-blue-600 font-bold">✓</span>
+              Focus on scalability & security
+            </li>
+          </ul>
+
+          <div className="mt-8 border-t pt-6">
+            <p className="text-sm text-slate-500">
+              Guaranteed response within 1 business day
+            </p>
           </div>
         </div>
       </div>
