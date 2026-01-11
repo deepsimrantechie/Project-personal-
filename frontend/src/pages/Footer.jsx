@@ -11,6 +11,9 @@ const Footer = () => {
           <ul className="space-y-2 text-sm">
             <li className="hover:text-white cursor-pointer">About Us</li>
             <li className="hover:text-white cursor-pointer">Careers</li>
+            <li className="hover:text-white cursor-pointer">
+              Life at Syncrosoft
+            </li>
           </ul>
         </div>
 
@@ -22,7 +25,7 @@ const Footer = () => {
             <li className="hover:text-white cursor-pointer">Development</li>
             <li className="hover:text-white cursor-pointer">Marketing</li>
             <li className="hover:text-white cursor-pointer">
-              Security and Maintenance
+              Security & Maintenance
             </li>
           </ul>
         </div>
@@ -32,22 +35,25 @@ const Footer = () => {
           <h4 className="text-white text-lg font-semibold mb-4">Resources</h4>
           <ul className="space-y-2 text-sm">
             <li className="hover:text-white cursor-pointer">Blogs</li>
-            <li className="hover:text-white cursor-pointer">Digital Library</li>
-            <li className="hover:text-white cursor-pointer">Guidelines</li>
+            <li className="hover:text-white cursor-pointer">Guides</li>
             <li className="hover:text-white cursor-pointer">Podcast</li>
+            <li className="hover:text-white cursor-pointer">Webinars</li>
           </ul>
         </div>
 
         {/* Contact */}
         <div>
-          <h4 className="text-white text-lg font-semibold mb-4">Contact Us</h4>
+          <h4 className="text-white text-lg font-semibold mb-4">
+            Registered Office
+          </h4>
           <p className="text-sm leading-relaxed">
-            114B, 3rd floor Dwarka Mor,
+            <strong>Syncrosoft Technologies Private Limited</strong>
             <br />
-            New Delhi
-          </p>
-          <p className="text-sm mt-3 hover:text-white cursor-pointer">
-            sales@nexgi.com
+            B128, First Floor, Sector 2,
+            <br />
+            Noida, Gautam Buddha Nagar – 201301,
+            <br />
+            Uttar Pradesh, India
           </p>
         </div>
       </div>
@@ -58,7 +64,7 @@ const Footer = () => {
       {/* Bottom Footer */}
       <div className="max-w-7xl mx-auto px-6 py-8 text-center">
         {/* Social Icons */}
-        <div className="flex justify-center gap-4 mb-4 text-lg">
+        <div className="flex justify-center gap-5 mb-4 text-lg">
           <span className="hover:text-white cursor-pointer">f</span>
           <span className="hover:text-white cursor-pointer">X</span>
           <span className="hover:text-white cursor-pointer">in</span>
@@ -69,7 +75,7 @@ const Footer = () => {
 
         {/* Copyright */}
         <p className="text-sm text-gray-400">
-          © 2026 NexGen Innovators IT Services Pvt Ltd
+          © 2026 Syncrosoft Technologies Private Limited. All rights reserved.
         </p>
 
         {/* Links */}
@@ -78,7 +84,7 @@ const Footer = () => {
             Privacy Policy
           </span>
           <span className="hover:text-white cursor-pointer">
-            Terms and Conditions
+            Terms & Conditions
           </span>
           <span className="hover:text-white cursor-pointer">Sitemap</span>
         </div>

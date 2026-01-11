@@ -1,5 +1,6 @@
 //import CareersCTA from "./components/CareersCTA";
 import ContentHub from "./components/ContentHub";
+import LifeAtSyncro from "./components/LifeAtSyncro";
 import Navbar from "./components/Navbar";
 import PodcastUpdates from "./components/PodcastUpdates";
 //import ServicesOverview from "./components/ServicesOverview";
@@ -16,6 +17,7 @@ function App() {
       {/**<SocialProof />
       <ServicesOverview />
       <CareersCTA /> */}
+      <LifeAtSyncro />
       <PodcastUpdates />
       <ContentHub />
       <Footer />

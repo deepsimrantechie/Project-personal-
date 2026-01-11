@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
+import logo from "../assets/logo.png"; // 👈 apne path ke hisaab se change kar sakta hai
 
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(null);
@@ -30,15 +31,19 @@ const Navbar = () => {
     <>
       <nav
         ref={navRef}
-        className={`fixed top-0 w-full z-50 transition-all ${
+        className={`fixed top-0 w-full z-50 transition-all duration-300 ${
           scrolled ? "bg-white shadow-sm" : "bg-white"
         }`}
       >
         <div className="max-w-7xl mx-auto px-6">
           <div className="h-20 flex items-center justify-between">
             {/* LOGO */}
-            <div className="text-xl font-semibold text-slate-900">
-              Syncrosoft<span className="text-blue-600">Tech</span>
+            <div className="flex items-center">
+              <img
+                src={logo}
+                alt="Company Logo"
+                className="h-8 w-auto cursor-pointer"
+              />
             </div>
 
             {/* MENU */}
@@ -97,7 +102,7 @@ const Navbar = () => {
               <a className="hover:text-blue-600 cursor-pointer">Contact</a>
             </div>
 
-            {/* SEARCH INPUT */}
+            {/* SEARCH */}
             <div className="hidden md:flex items-center">
               <div className="relative">
                 <input
